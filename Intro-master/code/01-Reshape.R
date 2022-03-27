@@ -20,6 +20,8 @@ names(tidy) <- c("religion", "income", "n")
 tidy <- melt(raw, id = "religion", 
   variable.name = "income", value.name = "n")
 
+glimpse(tidy)
+
 # Variable names in cells
 
 raw <- read.delim("data/weather.txt", check.names = F, na.strings = ".")
@@ -44,6 +46,8 @@ titanic2 <- read.csv("data/titanic2.csv",
   stringsAsFactors = FALSE)
 
 head(titanic2)
+
+glimpse(titanic2)
 
 # Your Turn
 # ------------------------------------------
